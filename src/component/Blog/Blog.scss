@@ -1,0 +1,39 @@
+.blogs{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+
+    .author{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+    }
+
+    .blog-content{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .blog-comment{
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+
+       .add-comment{
+        display: flex;
+        gap: 10px;
+       }
+
+       .comment-list{
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+       }
+    }
+}
