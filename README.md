@@ -1,12 +1,59 @@
-# React + Vite
+# 🌐 Blog Frontend App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** of a full-stack Blog Application, built with **React.js**, **Redux Toolkit**, and **React Router DOM**. It connects to the backend API for user authentication, blog post management, and comments.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 JWT-based User Authentication
+- 🧑‍💻 User Dashboard (My Posts, Profile)
+- 📝 Create / Delete Blog Posts (Edit is not completed due to time constraints);
+- 💬 Add Comments to Posts
+- 🔄 Global State Management via Redux Toolkit
+- ✅ Protected Routes
+- 🍃 React hooks and clean component structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- React.js (with Hooks)
+- Redux Toolkit
+- React Router DOM
+- Axios
+- SCSS
+- JWT for auth (stored in localStorage or cookies)
+
+---
+
+
+---
+
+## 🔐 Authentication Flow
+
+- Access token stored in `localStorage`
+- Refresh token managed via HTTP-only cookie
+- Protected routes handled via a `RequireUser` wrapper component
+
+---
+
+## 🔄 Redux Slices
+
+- `UserSlice` → Stores logged-in user info and their posts
+- `BlogListSlice` → Stores all blog posts and manages comment updates
+
+---
+
+## 🚧 Setup & Installation
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/blog-frontend.git
+cd blog-frontend
+npm install
+Edit backendUrl in AxiosClient file
+npm start
+
+
